@@ -1,5 +1,10 @@
 # MIT6.00.1x
 
+## Instructors
+Professor [John Guttag](https://people.csail.mit.edu/guttag/)
+Professor [Eric Grimson](https://www.csail.mit.edu/user/807)
+Dr. [Ana Bell](http://www.mit.edu/~anabell/)
+
 ## About this course
 This course is the first of a two-course sequence: Introduction to Computer Science and Programming Using Python(MIT6.00.1x), and Introduction to Computational Thinking and Data Science(MIT6.00.2x). 
 
