@@ -1,5 +1,7 @@
 # MIT6.00.1x
 
+Course Link:(https://www.edx.org/course/introduction-computer-science-mitx-6-00-1x-11)
+
 ## Instructors
 Professor [John Guttag](https://people.csail.mit.edu/guttag/)
 
