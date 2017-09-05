@@ -2,7 +2,9 @@
 
 ## Instructors
 Professor [John Guttag](https://people.csail.mit.edu/guttag/)
+
 Professor [Eric Grimson](https://www.csail.mit.edu/user/807)
+
 Dr. [Ana Bell](http://www.mit.edu/~anabell/)
 
 ## About this course
