@@ -10,12 +10,12 @@ At the beginning of month 0 (when the credit card statement arrives), assume you
 
 Any payment you make during that month is deducted from the balance. Let's call the payment you make in month 0, p<sub>0</sub>. Thus, your **unpaid balance** for month 0, ub<sub>0</sub>, is equal to b<sub>0</sub> − p<sub>0</sub>.
 
-At the beginning of month 1, the credit card company will charge you interest on your unpaid balance. So if your annual interest rate is *r*, then at the beginning of month 1, your new balance is your previous unpaid balance ub<sub>0</sub>, **plus** the interest on this unpaid balance for the month. In algebra, this new balance would be b<sub>1</sub> = ub<sub>0</sub> + \frac{r}{12} * ub<sub>0</sub>.
+At the beginning of month 1, the credit card company will charge you interest on your unpaid balance. So if your annual interest rate is *r*, then at the beginning of month 1, your new balance is your previous unpaid balance ub<sub>0</sub>, **plus** the interest on this unpaid balance for the month. In algebra, this new balance would be b<sub>1</sub> = ub<sub>0</sub> + r/12 * ub<sub>0</sub>.
 
 In month 1, we will make another payment, p<sub>1</sub>. That payment has to cover some of the interest costs, so it does not completely go towards paying off the original charge. The balance at the beginning of month 2, b<sub>2</sub>, can be calculated by first calculating the unpaid balance after paying p<sub>1</sub>, then by adding the interest accrued:
 
 ub<sub>1</sub> = b<sub>1</sub> - p<sub>1</sub> <br />
-b<sub>2</sub> = ub<sub>1</sub> + \frac{r}{12} * ub<sub>1</sub>
+b<sub>2</sub> = ub<sub>1</sub> + r/12 * ub<sub>1</sub>
 
 If you choose just to pay off the minimum monthly payment each month, you will see that the compound interest will dramatically reduce your ability to lower your debt.
 
