@@ -21,10 +21,10 @@ If you choose just to pay off the minimum monthly payment each month, you will s
 
 Let's look at an example. If you've got a $5,000 balance on a credit card with 18% annual interest rate, and the minimum monthly payment is 2% of the current balance, we would have the following repayment schedule if you only pay the minimum payment each month:
 
-|  Month  |            Balance          |    Minimum Payment          |         Unpaid Balance          |          Interest                 |
-|:-------:|:---------------------------:|:---------------------------:|:-------------------------------:|:----------------------------------:
-|    0    |          5000.00            |   100 (= 5000 * 0.02)       |      4900 (= 5000 - 100)        |    73.50 (= 0.18/12.0 * 4900)     |
-|    1    | 4973.50 (= 4900 + 73.50)    |  99.47 (= 4973.50 * 0.02)   |     4874.03 (= 4973.50 - 99.47) |    73.11 (= 0.18/12.0 * 4874.03)  |
-|    2    | 4947.14 (= 4874.03 + 73.11) |  98.94 (= 4947.14 * 0.02)   |     4848.20 (= 4947.14 - 98.94) |    72.72 (= 0.18/12.0 * 4848.20)  |
+| Month |           Balance           |      Minimum Payment     |        Unpaid Balance       |            Interest           |
+|:-----:|:---------------------------:|:------------------------:|:---------------------------:|:-----------------------------:|
+|   0   |           5000.00           |    100 (= 5000 * 0.02)   |     4900 (= 5000 - 100)     |   73.50 (= 0.18/12.0 * 4900)  |
+|   1   |   4973.50 (= 4900 + 73.50)  | 99.47 (= 4973.50 * 0.02) | 4874.03 (= 4973.50 - 99.47) | 73.11 (= 0.18/12.0 * 4874.03) |
+|   2   | 4947.14 (= 4874.03 + 73.11) | 98.94 (= 4947.14 * 0.02) | 4848.20 (= 4947.14 - 98.94) | 72.72 (= 0.18/12.0 * 4848.20) |
 
 You can see that a lot of your payment is going to cover interest, and if you work this through month 12, you will see that after a year, you will have paid $1165.63 and yet you will still owe $4691.11 on what was originally a $5000.00 debt. Pretty depressing!
