@@ -1,9 +1,35 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""
-Created on Wed Sep  6 22:05:58 2017
 
-@author: Ken
+"""
+Write a program to calculate the credit card balance after one year if 
+a person only pays the minimum monthly payment required by the credit 
+card company each month.
+
+The following variables contain values as described below:
+
+1. balance - the outstanding balance on the credit card
+
+2. annualInterestRate - annual interest rate as a decimal
+
+3. monthlyPaymentRate - minimum monthly payment rate as a decimal
+
+For each month, calculate statements on the monthly payment and remaining balance. 
+At the end of 12 months, print out the remaining balance. Be sure to print out 
+no more than two decimal digits of accuracy - so print
+
+Remaining balance: 813.41
+instead of
+
+Remaining balance: 813.4141998135 
+So your program only prints out one thing: the remaining balance at the end of 
+the year in the format:
+
+Remaining balance: 4784.0
 """
 
-#TODO...
+# Recursion
+# b_n = (1+r/12)(b_n-1 - paymentRate * b_n-2)
+def calculate_balance (init_balance, annualInterestRate, monthlyPaymentRate, month):
+    # TODO...
+    return 0
