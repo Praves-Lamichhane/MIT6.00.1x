@@ -30,6 +30,7 @@ def find_longest_substring_in_alphabetical_order(s):
         if (i == len(s)-1 and s[i] > prev_char):
            groups.append(cur_longest)
         prev_char = s[i]
+    # choose longest elment in the list
     return max(groups, key=len) if groups else s
 
 s = 'eycstpipqz' # test vector
