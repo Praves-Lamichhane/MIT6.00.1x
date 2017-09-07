@@ -28,8 +28,28 @@ the year in the format:
 Remaining balance: 4784.0
 """
 
-# Recursion
-# b_n = (1+r/12)(b_n-1 - paymentRate * b_n-2)
-def calculate_balance (init_balance, annualInterestRate, monthlyPaymentRate, month):
-    # TODO...
-    return 0
+
+# Monthly interest rate= (Annual interest rate) / 12.0
+# Minimum monthly payment = (Minimum monthly payment rate) x (Previous balance)
+# Monthly unpaid balance = (Previous balance) - (Minimum monthly payment)
+# Updated balance each month = (Monthly unpaid balance) + 
+#                              (Monthly interest rate x Monthly unpaid balance)
+
+def calculate_balance (balance, annualInterestRate, monthlyPaymentRate):
+    number_of_months = 12; # 1 year = 12 months
+    monthly_interest_rate = annualInterestRate/12;
+    prev_balance = balance; # initially
+    for month in range(0,number_of_months):
+        minimum_monthly_payment = monthlyPaymentRate * prev_balance;
+        monthly_unpaid_balance = prev_balance - minimum_monthly_payment;
+        updated_balance = monthly_unpaid_balance + (monthly_interest_rate*monthly_unpaid_balance);
+        prev_balance = updated_balance;        
+    return updated_balance;
+
+# Example test vector
+balance = 42;
+annualInterestRate = 0.2;
+monthlyPaymentRate = 0.04;
+
+remain_balance = calculate_balance(balance, annualInterestRate, monthlyPaymentRate);
+print("Remaining balance: %.2f" %remain_balance);
