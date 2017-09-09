@@ -1,4 +1,4 @@
-## Introduction
+# Introduction
 
 Note: Do not be intimidated by this problem! It's actually easier than it looks. We will 'scaffold' this problem, guiding you through the creation of helper functions before you implement the actual game.
 
