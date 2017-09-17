@@ -1,4 +1,5 @@
 # The 6.00 Word Game
+# Author: Ken Cheung
 
 import random
 import string
