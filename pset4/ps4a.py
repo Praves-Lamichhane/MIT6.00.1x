@@ -73,7 +73,13 @@ def getWordScore(word, n):
     returns: int >= 0
     """
     # TO DO ... <-- Remove this comment when you code this function
-
+    score = 0
+    for letter in word:
+        score += SCRABBLE_LETTER_VALUES[letter]
+    score *= len(word)
+    if n == len(word):
+        score += 50
+    return score
 
 
 #
@@ -144,7 +150,11 @@ def updateHand(hand, word):
     returns: dictionary (string -> int)
     """
     # TO DO ... <-- Remove this comment when you code this function
-
+    new_hand = dict(hand)
+    for letter in word:
+        if letter in new_hand:
+            new_hand[letter] -= 1
+    return new_hand
 
 
 #
