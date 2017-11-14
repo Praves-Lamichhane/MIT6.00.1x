@@ -175,7 +175,16 @@ def isValidWord(word, hand, wordList):
     wordList: list of lowercase strings
     """
     # TO DO ... <-- Remove this comment when you code this function
-
+    hand_cpy = dict(hand)
+    word_count = getFrequencyDict(word)
+    if word not in wordList:
+        return False
+    else:
+        # word is in the word list
+        for element in word_count:
+            if element not in hand_cpy or hand_cpy[element] < word_count[element]:
+                return False
+        return True
 
 #
 # Problem #4: Playing a hand
@@ -263,8 +272,6 @@ def playGame(wordList):
     # TO DO ... <-- Remove this comment when you code this function
     print("playGame not yet implemented.") # <-- Remove this line when you code the function
    
-
-
 
 #
 # Build data structures used for entire session and play game
