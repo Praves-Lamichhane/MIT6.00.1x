@@ -73,12 +73,14 @@ def getWordScore(word, n):
     returns: int >= 0
     """
     # TO DO ... <-- Remove this comment when you code this function
-    score = 0
+    score = 0 # initial score
+    bonus = 50 # bonus mark for completed word
     for letter in word:
-        score += SCRABBLE_LETTER_VALUES[letter]
-    score *= len(word)
+        score += SCRABBLE_LETTER_VALUES[letter] # add the corresponding score
+    score *= len(word) # multiply by the length of word
+    
     if n == len(word):
-        score += 50
+        score += bonus
     return score
 
 
@@ -150,10 +152,11 @@ def updateHand(hand, word):
     returns: dictionary (string -> int)
     """
     # TO DO ... <-- Remove this comment when you code this function
-    new_hand = dict(hand)
+    
+    new_hand = dict(hand) # copy the original dict to a new dict
     for letter in word:
         if letter in new_hand:
-            new_hand[letter] -= 1
+            new_hand[letter] -= 1 # remove element in dict
     return new_hand
 
 
