@@ -126,10 +126,40 @@ def playGame(wordList):
     wordList: list (string)
     """
     # TO DO... <-- Remove this comment when you code this function
-    print("playGame not yet implemented.") # <-- Remove this when you code this function
-
-        
-#
+    # print("playGame not yet implemented.") # <-- Remove this when you code this function
+    while True:
+        option = str(input('Enter n to deal a new hand, r to replay the last hand, or e to end game: '))
+        if option is 'e':
+            break
+        elif option is 'n':
+            while True:
+                # HCI means human computer interaction ;-)
+                hci = str(input('Enter u to have yourself play, c to have the computer play: '))
+                if hci is 'u':
+                    hand = dealHand(HAND_SIZE)
+                    playHand(hand, wordList, HAND_SIZE)
+                    break
+                elif hci is 'c':
+                    hand = dealHand(HAND_SIZE)
+                    compPlayHand(hand, wordList, HAND_SIZE)
+                    break
+                else:
+                    print('Invalid command.')            
+        elif option is 'r':
+            try:
+                hand
+                hci = str(input('Enter u to have yourself play, c to have the computer play: '))
+                if hci is 'u':
+                    playHand(hand, wordList, HAND_SIZE)
+                elif hci is 'c':
+                    compPlayHand(hand, wordList, HAND_SIZE)
+                else:
+                    print('Invalid command.')
+            except:
+                print('You have not played a hand yet. Please play a new hand first!')
+        else:
+            print('Invalid command.')       
+#           
 # Build data structures used for entire session and play game
 #
 if __name__ == '__main__':
