@@ -161,7 +161,7 @@ class PlaintextMessage(Message):
         code is repeated
         '''
 
-        Message.__init__(self, text)
+        super(PlaintextMessage, self).__init__(text)
         self.shift = shift
         self.encrypting_dict = Message.build_shift_dict(self, shift)
         self.message_text_encrypted = Message.apply_shift(self, shift)
@@ -218,12 +218,12 @@ class CiphertextMessage(Message):
         Initializes a CiphertextMessage object
                 
         text (string): the message's text
-
         a CiphertextMessage object has two attributes:
             self.message_text (string, determined by input text)
             self.valid_words (list, determined using helper function load_words)
         '''
-        pass #delete this line and replace with your code here
+        
+        super(CiphertextMessage, self).__init__(text)
 
     def decrypt_message(self):
         '''
@@ -233,15 +233,29 @@ class CiphertextMessage(Message):
         on the message text. If s is the original shift value used to encrypt
         the message, then we would expect 26 - s to be the best shift value 
         for decrypting it.
-
         Note: if multiple shifts are  equally good such that they all create 
         the maximum number of you may choose any of those shifts (and their
         corresponding decrypted messages) to return
-
         Returns: a tuple of the best shift value used to decrypt the message
         and the decrypted message text using that shift value
         '''
-        pass #delete this line and replace with your code here
+
+        best_shift = 0
+        max_vld_wc = 0
+        for shift in range (1, 27): # Assume the text needs to be shifted at least by one
+            vld_wc = 0
+            shifted_str = super(CiphertextMessage, self).apply_shift(shift)
+            words = shifted_str.split(' ')
+            for word in words:
+                if is_word(self.valid_words, word):
+                    vld_wc += 1
+                    # Find max word count
+                    if vld_wc > max_vld_wc:
+                        max_vld_wc = vld_wc
+                        # if shift == 26 means we wrap around, so no shift is required
+                        best_shift = shift if shift < 26 else 0
+        
+        return (best_shift, super(CiphertextMessage, self).apply_shift(best_shift))
 
 #Example test case (PlaintextMessage)
 plaintext = PlaintextMessage('hello', 2)
