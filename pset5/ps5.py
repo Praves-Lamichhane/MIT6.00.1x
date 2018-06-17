@@ -163,8 +163,8 @@ class PlaintextMessage(Message):
 
         super(PlaintextMessage, self).__init__(text)
         self.shift = shift
-        self.encrypting_dict = Message.build_shift_dict(self, shift)
-        self.message_text_encrypted = Message.apply_shift(self, shift)
+        self.encrypting_dict = super(PlaintextMessage, self).build_shift_dict(shift)
+        self.message_text_encrypted = super(PlaintextMessage, self).apply_shift(shift)
 
     def get_shift(self):
         '''
@@ -209,8 +209,8 @@ class PlaintextMessage(Message):
         '''
 
         self.shift = shift
-        self.encrypting_dict = Message.build_shift_dict(self, shift)
-        self.message_text_encrypted = Message.apply_shift(self, shift)
+        self.encrypting_dict = super(PlaintextMessage, self).build_shift_dict(shift)
+        self.message_text_encrypted = super(PlaintextMessage, self).build_shift_dict(shift)
 
 class CiphertextMessage(Message):
     def __init__(self, text):
