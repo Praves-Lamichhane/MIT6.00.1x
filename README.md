@@ -3,9 +3,9 @@
 Course Link: (https://www.edx.org/course/introduction-computer-science-mitx-6-00-1x-11)
 
 ## Instructors
-Professor [John Guttag](https://people.csail.mit.edu/guttag/)
+Prof. [John Guttag](https://people.csail.mit.edu/guttag/)
 
-Professor [Eric Grimson](https://www.csail.mit.edu/user/807)
+Prof. [Eric Grimson](https://www.csail.mit.edu/user/807)
 
 Dr. [Ana Bell](http://www.mit.edu/~anabell/)
 
