@@ -1,4 +1,4 @@
-# MIT6.00.1x
+# MIT6.00.1x(Finished - as of 26 Nov, 2018)
 
 Course Link: (https://www.edx.org/course/introduction-computer-science-mitx-6-00-1x-11)
 
